@@ -7,12 +7,12 @@
   </head>
   <body>
     <header>
-        <div class="menu-toogler">
+        <div id="menu" onclick="onClickMenu()">
            <div class="bar" id="bar1"></div>
            <div class="bar" id="bar2"></div>
            <div class="bar" id="bar3"></div>
         </div>
-        <nav class="top-nav">
+        <nav class="top-nav" id="top-nav">
            <ul class="nav-list">
                <li>
                   <a href="index.html" class="nav-link">Home</a>
@@ -41,13 +41,13 @@
       </nav>
       <div class="landing-text">
           <h1>Elias El</h1>
-          <h6>WebDev | Front End</h6>
+          <h6>UI | UX and Web Developer</h6>
       </div>
     </header>
     <section>
         <div class="container">
             <div class="profile-img">
-                <img src="image/IMG_0969.JPG" alt="img-profile">
+                <img src="image/profile.JPG" alt="img-profile">
             </div>
             <div class="about-details">
                 <div class="about-heading">
@@ -56,30 +56,76 @@
                 </div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque ut nobis eligendi minima nesciunt, minus ratione illum saepe suscipit fugiat. Debitis iusto accusantium perspiciatis odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, autem!
                 </p>
-            </div>
-            <div class="social-media">
-                <ul class="nav-list">
-                    <li>
+
+                <div class="social-media">
+                  <ul class="nav-list">
+                      <li>
+                          <a href="#" class="icon-link">
+                            <i class="fab fa-facebook-square"></i>
+                          </a>
+                      </li>
+  
+                      <li>
                         <a href="#" class="icon-link">
-                          <i class="fab fa-facebook-square"></i>
+                          <i class="fab fa-twitter-square"></i>
                         </a>
                     </li>
-
+  
                     <li>
                       <a href="#" class="icon-link">
-                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-dribbble-square"></i>
                       </a>
                   </li>
-
-                  <li>
-                    <a href="#" class="icon-link">
-                      <i class="fab fa-dribbble-square"></i>
-                    </a>
-                </li>
-                </ul>
+                  </ul>
+              </div>
             </div>
         </div>
-    </section>
 
+        <section class="container2">
+          
+            <div class="box">
+                <div class="content">
+                    <div class="icon">
+                      <ion-icon name="brush-outline"></ion-icon>
+                    </div>
+                    <div class="text">
+                       <h3>Designing</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam!</p> 
+                       <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="box">
+              <div class="content">
+                  <div class="icon">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                  </div>
+                  <div class="text">
+                     <h3>Development</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam!</p> 
+                     <a href="#">Read More</a>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="box">
+            <div class="content">
+                <div class="icon">
+                  <ion-icon name="search-outline"></ion-icon>
+                </div>
+                <div class="text">
+                   <h3>SEO</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam!</p> 
+                   <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        </section>
+    </section>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
