@@ -193,6 +193,7 @@ li{
 .social-media i{
   font-size: 4rem;
   transition: color 650ms;
+  margin-top: 4rem;
 }
 
 .fa-facebook-square:hover{
@@ -345,4 +346,108 @@ transform: skewY(0);
 #top-nav{
   z-index: 2;
   position: fixed;
+}
+
+
+/* 
+    section heading 
+*/
+
+.section-heading{
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.section-heading h1{
+  font-size: 3rem;
+  color: rgba(255,255,255,.3);
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.section-heading h1::before,
+.section-heading h1::after{
+  content: '';
+  position: absolute;
+  bottom: -0.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255,255,255,0.75);
+}
+
+.section-heading h1::before{
+  width: 6rem;
+  height: 3px;
+  border-radius: 1rem;
+}
+
+
+.section-heading h1::after{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.7);
+  bottom: -.9rem;
+}
+
+.section-heading h6{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 6rem;
+}
+
+/*  section 3 portfolio*/
+
+
+.portfolio{
+  height: 100vh;
+
+
+}
+
+.portfolio-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+img{
+  width: 500px;
+  border-radius: 20px;
+}
+
+.portfolio-description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portfolio-description h6{
+  color: #fff;
+  font-size: 3rem;
+  font-family: cursive;
+}
+
+.portfolio-description h1{
+  color: rgba(255,255,255,0.7);
+  font-size: 2rem;
+}
+.portfolio-description p{
+  text-align: center;
+  color: rgba(255,255,255,.3);
+  width: 50%;
+  font-size: 1.3rem;
+}
+
+.portfolio-description a{
+  margin-top: 1rem;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255,255,255,0.3);
+  padding: 5px 10px;
+  border-radius: 1rems;
 }
