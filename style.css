@@ -404,7 +404,6 @@ transform: skewY(0);
 .portfolio{
   height: 100vh;
 
-
 }
 
 .portfolio-item{
@@ -450,4 +449,70 @@ img{
   background: rgba(255,255,255,0.3);
   padding: 5px 10px;
   border-radius: 1rems;
+}
+
+.container4{
+  margin-top: 50rem;
+  height: 100vh;
+}
+
+.timeLine ul{
+  border-left: 4px solid #ffe838;
+  border-radius: .8rem;
+  background-color: rgba(0,0,0,0.05);
+  margin: 0 auto;
+  position: relative;
+  padding: 1rem;
+  list-style: none;
+  text-align: center;
+  width: 20%;
+}
+
+.timeLine h1{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 1.4rem;
+  opacity: .3;
+}
+
+.timeLine .date{
+  border-bottom:  1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  color: #fff;
+}
+
+.timeLine .date:nth-last-of-type{
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeLine .date::before,
+.timeLine .date::after{
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.timeLine .date::before{
+  content: attr(data-date);
+  left: -21rem;
+  text-align: right;
+  min-width: 12rem;
+  font-size: 1rem;
+}
+
+.timeLine .date::after{
+  content: '';
+  box-shadow: 0 0 0 4px #fd57bf;
+  border-radius: 100%;
+  left: -3.8rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: #313534;
 }
