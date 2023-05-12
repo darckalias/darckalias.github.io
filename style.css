@@ -567,3 +567,33 @@ input[type="submit"]:hover{
   padding: 2rem  0;
   position: relative;
 }
+
+
+@media (max-width: 850px){
+
+    .container{
+      flex-direction: column;
+      margin: 250px 0;
+    }
+    .about-details{
+      margin-top: 50px;
+    }  
+    .container2{
+      margin-bottom: 90px;
+    }
+
+    .container4{
+      margin: 900px 0;
+    }
+
+    .nav-list{
+      flex-direction: column;
+    }
+    .nav-list li{
+      padding-top: 40px;
+    }
+
+    .portfolio-item{
+      flex-direction: column;
+    }
+}
